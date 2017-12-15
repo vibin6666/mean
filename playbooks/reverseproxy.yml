@@ -1,0 +1,12 @@
+---
+- hosts: nginx
+  become: yes
+  pre_tasks:
+    - debug:
+        msg: "This task will get executed before the role"
+  roles:
+    - nginx
+  
+  post_tasks:
+    - debug:
+        msg: "This task will get executed after the role"
