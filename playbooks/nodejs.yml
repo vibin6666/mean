@@ -1,5 +1,5 @@
 ---
-- hosts: nodejs
+- hosts: all
   become: yes
   vars_files:
     - credentials.yml
